@@ -1,9 +1,12 @@
+import DailyGoals from './pages/daily-goals'
+
 import './App.css'
+
 
 function App() {
   return (
     <div className="App">
-      Hello Dani
+      <DailyGoals />
     </div>
   )
 }

@@ -3,3 +3,7 @@
   height: 90vh;
   border: 1px solid #cccccc2f;
 }
+
+ul, li {
+  list-style: none;
+}
