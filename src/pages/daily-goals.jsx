@@ -26,6 +26,23 @@ export const DailyGoals = () => {
           setInput('');
         }} >Add</button>
       </div>
+      <div className="other-goals">
+        <h2>Other goals:</h2>
+        <ul>
+          {secondaryGoalsList.map((item, index) => {
+            return <li key={index}>{item}</li>
+          })}
+        </ul>
+        <input
+          type="text"
+          value={secondayGoalInput}
+          onChange={(e) => { setSecondaryGoalInput(e.target.value) }}
+        />
+        <button onClick={() => {
+          setSecondaryGoalsList([...secondaryGoalsList, secondayGoalInput])
+          setSecondaryGoalInput("")
+        }}>Add</button>
+      </div>
     </div>
   );
 }
