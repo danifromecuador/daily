@@ -1,4 +1,4 @@
-import DailyGoals from './pages/daily-goals'
+import { DailyGoals } from './pages/daily-goals'
 
 import './App.css'
 
