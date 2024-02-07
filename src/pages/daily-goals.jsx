@@ -23,6 +23,7 @@ export const DailyGoals = () => {
         />
         <button onClick={() => {
           setMainGoalsList([...mainGoalsList, input]);
+          localStorage.setItem('mainGoalsList', JSON.stringify([...mainGoalsList, input]));
           setInput('');
         }} >Add</button>
       </div>
