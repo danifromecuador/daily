@@ -11,6 +11,4 @@ function App() {
   )
 }
 
-where's my data
-
 export default App
