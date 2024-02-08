@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const DailyGoals = () => {
-  const [mainGoalsList, setMainGoalsList] = useState([]);
+  const [mainGoalsList, setMainGoalsList] = useState([] : localStorage.getItem('mainGoalsList'))
   const [secondaryGoalsList, setSecondaryGoalsList] = useState([]);
   const [input, setInput] = useState('');
   const [secondayGoalInput, setSecondaryGoalInput] = useState('');
