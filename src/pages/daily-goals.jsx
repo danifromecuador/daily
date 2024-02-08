@@ -28,6 +28,15 @@ export const DailyGoals = () => {
     />
     <button onClick={manageAddGoalBtn} >Add</button>
     <div>
+      <ul>
+        {
+          goals.map((e)=>{
+            return ( <div>{e}</div> )
+          })
+        }
+      </ul>
+    </div>
+    <div>
       <button onClick={manageDeleteAllGoalsBtn} >Delete All Goals</button>
     </div>
   </>)
