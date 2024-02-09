@@ -15,12 +15,23 @@ export const DailyGoals = () => {
     }
   }
 
+  const handleEnterKey = (e) => {
+    if (e.key == 'Enter') {
+      manageAddGoalBtn()
+    }
+  }
+
   const manageDeleteAllGoalsBtn = () => setGoals([])
 
   return <>
     <h1>Daily Goals</h1>
     <ul>{goals.map((e, i) => <div key={i}>{e}</div>)}</ul>
-    <input type="text" value={input} onChange={(e) => setInput(e.target.value)} />
+    <input
+      type="text"
+      value={input} 
+      onChange={(e) => { setInput(e.target.value) }}
+      onKeyDown={handleEnterKey}
+    />
     <button onClick={manageAddGoalBtn} >Add</button>
     <div><button onClick={manageDeleteAllGoalsBtn} >Delete All Goals</button></div>
   </>
