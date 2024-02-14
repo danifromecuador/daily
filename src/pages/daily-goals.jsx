@@ -25,8 +25,7 @@ export const DailyGoals = () => {
 
   return <>
     <h1>Daily Goals</h1>
-    <ul>{goals.map((e, i) => <div key={i}>{e}</div>)}</ul>
-    <input type="checkbox" name="" id="" />
+    <ul>{goals.map((e, i) => <div key={i}> <input type="checkbox" name="" id="" /> {e}</div>)}</ul>
     <input
       type="text"
       value={input} 
