@@ -10,7 +10,7 @@ export const DailyGoals = () => {
 
   const manageAddGoalBtn = () => {
     if (input) {
-      setGoals([...goals, {index: goals.length, status: 'pending', text: input}])
+      setGoals([...goals, { index: goals.length, status: 'pending', text: input }])
       setInput("")
     }
   }
@@ -21,14 +21,21 @@ export const DailyGoals = () => {
     }
   }
 
+  const handleStatusCheckBox = (i) => {
+    console.log("hello" + i);
+  }
+
   const manageDeleteAllGoalsBtn = () => setGoals([])
 
   return <>
     <h1>Daily Goals</h1>
-    <ul>{goals.map((e, i) => <div key={i}> <input type="checkbox" name="" id="" /> {e.text}</div>)}</ul>
+    <ul>{goals.map((e, i) => <div key={i}>
+      <input type="checkbox" name="" id="" onChange={()=>handleStatusCheckBox(i)}/>
+      {e.text}
+    </div>)}</ul>
     <input
       type="text"
-      value={input} 
+      value={input}
       onChange={(e) => { setInput(e.target.value) }}
       onKeyDown={handleEnterKey}
     />
