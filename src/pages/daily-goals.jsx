@@ -38,7 +38,7 @@ export const DailyGoals = () => {
   return <>
     <h1>Daily Goals</h1>
     <ul>{goals.map((e, i) => <div key={i}>
-      <input type="checkbox" name="" id="" onChange={()=>handleStatusCheckBox(i)}/>
+      <input type="checkbox" checked= {goals[i].status == 'pending' ? false : true} name="" id="" onChange={()=>handleStatusCheckBox(i)}/>
       {e.text}
     </div>)}</ul>
     <input
