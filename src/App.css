@@ -8,3 +8,12 @@ ul,
 li {
   list-style: none;
 }
+
+span {
+  margin-left: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
