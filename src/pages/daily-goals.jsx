@@ -35,7 +35,7 @@ export const DailyGoals = () => {
 
   const manageDeleteAllGoalsBtn = () => setGoals([])
 
-  return <>
+  return <div className="daily-goals">
     <h1>Daily Goals</h1>
     <ul>{goals.map((e, i) => <div key={i}>
       <input
@@ -57,5 +57,5 @@ export const DailyGoals = () => {
     />
     <button onClick={manageAddGoalBtn} >Add</button>
     <div><button onClick={manageDeleteAllGoalsBtn} >Delete All Goals</button></div>
-  </>
+  </div>
 }

@@ -17,3 +17,14 @@ span {
   text-decoration: line-through;
   color: gray;
 }
+
+.daily-goals {
+  border: 1px solid #cccccc2f;
+  border-radius: 20px;
+  width: 50%;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
