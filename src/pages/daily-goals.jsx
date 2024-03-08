@@ -39,7 +39,7 @@ export const DailyGoals = () => {
     <h1>Daily Goals</h1>
     <ul>
       {goals.map((e, i) => <div key={i}>
-        <li>
+        <li className="li-goal">
           <input
             type="checkbox"
             className="checkbox"
@@ -51,6 +51,11 @@ export const DailyGoals = () => {
           <span className={goals[i].status} >
             {e.text}
           </span>
+          <input 
+          className="delete-goal-btn"
+          type="button"
+           value="🞭" 
+           />
         </li>
       </div>)}
     </ul>

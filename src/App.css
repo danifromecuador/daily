@@ -23,6 +23,13 @@ ul {
   list-style: none;
 }
 
+.li-goal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 li {
   padding: 10px;
   border: 1px solid #cccccc2f;
@@ -34,6 +41,12 @@ li {
 span {
   margin-left: 10px;
   font-size: 0.9rem;
+  width: 80%;
+}
+
+.delete-goal-btn {
+  width: 25px;
+  cursor: pointer;  
 }
 
 /* Completed goal styling */
@@ -86,6 +99,7 @@ span {
 .add-btn {
   width: 15%;
   align-self: self-end;
+  background-color: #cccccc2f;
 }
 
 .delete-btn {
@@ -94,7 +108,7 @@ span {
   padding: 10px;
   border-radius: 15px;
   border: 1px solid #cccccc2f;
-  background-color: transparent;
+  background-color: #cccccc2f;
   color: white;
 }
 
