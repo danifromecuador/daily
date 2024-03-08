@@ -1,23 +1,11 @@
+/* General styling */
 .App {
   width: 90vw;
   height: 90vh;
   border: 1px solid #cccccc2f;
 }
 
-ul,
-li {
-  list-style: none;
-}
-
-span {
-  margin-left: 10px;
-}
-
-.done {
-  text-decoration: line-through;
-  color: gray;
-}
-
+/* Daily Goals component styling */
 .daily-goals {
   border: 1px solid #cccccc2f;
   border-radius: 20px;
@@ -27,4 +15,85 @@ span {
 
 h1 {
   text-align: center;
+}
+
+/* List and List Items styling */
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid #cccccc2f;
+  border-radius: 15px;
+  margin: 10px 0;
+}
+
+/* Span inside list items styling */
+span {
+  margin-left: 10px;
+}
+
+/* Completed goal styling */
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Checkbox styling */
+.checkbox {
+  transform: scale(1.5);
+}
+
+.checkbox:hover {
+  cursor: pointer;
+}
+
+/* Input and Add Button styling */
+.input-and-add-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goal-input,
+.add-btn {
+  width: 80%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #cccccc2f;
+  margin: 10px 0;
+  background-color: transparent;
+  color: white;
+}
+
+.goal-input:focus {
+  outline: none;
+}
+
+.add-btn {
+  width: 15%;
+  align-self: self-end;
+}
+
+.add-btn:hover,
+.delete-btn:hover {
+  background-color: #cccccc2f;
+  cursor: pointer;
+}
+
+/* Delete Button Container and Button styling */
+.delete-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-btn {
+  width: 60%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #cccccc2f;
+  background-color: transparent;
+  color: white;
 }
