@@ -35,27 +35,43 @@ export const DailyGoals = () => {
 
   const manageDeleteAllGoalsBtn = () => setGoals([])
 
-  return <>
+  return <div className="daily-goals">
     <h1>Daily Goals</h1>
-    <ul>{goals.map((e, i) => <div key={i}>
+    <ul>
+      {goals.map((e, i) => <div key={i}>
+        <li>
+          <input
+            type="checkbox"
+            className="checkbox"
+            checked={goals[i].status == 'pending' ? false : true}
+            name=""
+            id=""
+            onChange={() => handleStatusCheckBox(i)}
+          />
+          <span className={goals[i].status} >
+            {e.text}
+          </span>
+        </li>
+      </div>)}
+    </ul>
+    <div className="input-and-add-button">
       <input
-        type="checkbox"
-        checked={goals[i].status == 'pending' ? false : true}
-        name=""
-        id=""
-        onChange={() => handleStatusCheckBox(i)}
+        type="text"
+        className="goal-input"
+        placeholder="add a new goal"
+        value={input}
+        onChange={(e) => { setInput(e.target.value) }}
+        onKeyDown={handleEnterKey}
       />
-      <span className= {goals[i].status} >
-        {e.text}
-      </span>
-    </div>)}</ul>
-    <input
-      type="text"
-      value={input}
-      onChange={(e) => { setInput(e.target.value) }}
-      onKeyDown={handleEnterKey}
-    />
-    <button onClick={manageAddGoalBtn} >Add</button>
-    <div><button onClick={manageDeleteAllGoalsBtn} >Delete All Goals</button></div>
-  </>
+      <button
+        className="add-btn"
+        onClick={manageAddGoalBtn} >          
+        Add
+      </button>
+
+    </div>
+    <div className="delete-btn-container" >
+      <button className="delete-btn" onClick={manageDeleteAllGoalsBtn} >Delete All Goals</button>
+    </div>
+  </div>
 }
