@@ -15,6 +15,7 @@
 
 h1 {
   text-align: center;
+  font-size: 2rem;
 }
 
 /* List and List Items styling */
@@ -32,6 +33,7 @@ li {
 /* Span inside list items styling */
 span {
   margin-left: 10px;
+  font-size: 0.9rem;
 }
 
 /* Completed goal styling */
@@ -58,7 +60,7 @@ span {
 
 .goal-input,
 .add-btn {
-  width: 80%;
+  width: 83%;
   padding: 10px;
   border-radius: 15px;
   border: 1px solid #cccccc2f;
@@ -67,9 +69,22 @@ span {
   color: white;
 }
 
+.goal-input, .add-btn {
+  height: 44px;
+}
+
 .goal-input:focus {
   outline: none;
 }
+
+.goal-input {
+  font-size: 0.9rem;
+}
+
+.add-btn, .delete-btn {
+  font-size: 1rem;
+}
+
 
 .add-btn {
   width: 15%;
@@ -90,7 +105,8 @@ span {
 }
 
 .delete-btn {
-  width: 60%;
+  width: 50%;
+  height: 44px;
   padding: 10px;
   border-radius: 15px;
   border: 1px solid #cccccc2f;
