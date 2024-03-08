@@ -22,7 +22,7 @@ export const DailyGoals = () => {
   }
 
   const handleStatusCheckBox = (i) => {
-    // alert(i)
+    alert(i)
     if (goals[i].status == 'pending') {
       goals[i].status = 'done'
       setGoals([...goals])
@@ -31,6 +31,10 @@ export const DailyGoals = () => {
       goals[i].status = 'pending'
       setGoals([...goals])
     }
+  }
+
+  const handleDeleteGoalBtn = (i) => {
+    alert(i)
   }
 
   const manageDeleteAllGoalsBtn = () => setGoals([])
@@ -54,7 +58,8 @@ export const DailyGoals = () => {
           <input 
           className="delete-goal-btn"
           type="button"
-           value="🞭" 
+           value="🞭"
+           onClick={()=> handleDeleteGoalBtn(i)}
            />
         </li>
       </div>)}
