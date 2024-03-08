@@ -61,6 +61,7 @@ span {
 .goal-input,
 .add-btn {
   width: 83%;
+  height: 44px;
   padding: 10px;
   border-radius: 15px;
   border: 1px solid #cccccc2f;
@@ -69,26 +70,32 @@ span {
   color: white;
 }
 
-.goal-input, .add-btn {
-  height: 44px;
+.goal-input {
+  font-size: 0.9rem;
 }
 
 .goal-input:focus {
   outline: none;
 }
 
-.goal-input {
-  font-size: 0.9rem;
-}
-
-.add-btn, .delete-btn {
+.add-btn,
+.delete-btn {
   font-size: 1rem;
 }
-
 
 .add-btn {
   width: 15%;
   align-self: self-end;
+}
+
+.delete-btn {
+  width: 50%;
+  height: 44px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #cccccc2f;
+  background-color: transparent;
+  color: white;
 }
 
 .add-btn:hover,
@@ -102,14 +109,4 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.delete-btn {
-  width: 50%;
-  height: 44px;
-  padding: 10px;
-  border-radius: 15px;
-  border: 1px solid #cccccc2f;
-  background-color: transparent;
-  color: white;
 }
