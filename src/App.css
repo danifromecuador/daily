@@ -1,15 +1,14 @@
 /* General styling */
 .App {
-  width: 90vw;
-  height: 90vh;
-  border: 1px solid #cccccc2f;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Daily Goals component styling */
 .daily-goals {
   border: 1px solid #cccccc2f;
   border-radius: 20px;
-  width: 50%;
+  width: 100%;
   padding: 10px;
 }
 
@@ -38,9 +37,10 @@ li {
 
 /* Span inside list items styling */
 span {
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  padding: 0 10px;
   font-size: 0.9rem;
-  width: 80%;
+  width: 100%;
 }
 
 .delete-goal-btn {
