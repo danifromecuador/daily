@@ -35,10 +35,13 @@ export const DailyGoals = () => {
 
   const handleDeleteGoalBtn = (i) => {
     // alert(i)
-    console.log(goals[i])
+    // console.log(goals[i])
     goals.splice(i, 1)
+    for (i=0; i<goals.length; i++) {
+      goals[i].index = i
+    }
     setGoals([...goals])
-    console.log(goals)
+    // console.log(goals)
   }
 
   const manageDeleteAllGoalsBtn = () => setGoals([])
