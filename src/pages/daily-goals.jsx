@@ -33,13 +33,24 @@ export const DailyGoals = () => {
     }
   }
 
+  const handleDeleteGoalBtn = (i) => {
+    // alert(i)
+    // console.log(goals[i])
+    goals.splice(i, 1)
+    for (i=0; i<goals.length; i++) {
+      goals[i].index = i
+    }
+    setGoals([...goals])
+    // console.log(goals)
+  }
+
   const manageDeleteAllGoalsBtn = () => setGoals([])
 
   return <div className="daily-goals">
     <h1>Daily Goals</h1>
     <ul>
       {goals.map((e, i) => <div key={i}>
-        <li>
+        <li className="li-goal">
           <input
             type="checkbox"
             className="checkbox"
@@ -51,6 +62,12 @@ export const DailyGoals = () => {
           <span className={goals[i].status} >
             {e.text}
           </span>
+          <input 
+          className="delete-goal-btn"
+          type="button"
+           value="🞭"
+           onClick={()=> handleDeleteGoalBtn(i)}
+           />
         </li>
       </div>)}
     </ul>
