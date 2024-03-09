@@ -27,7 +27,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 li {
@@ -46,7 +45,7 @@ span {
 
 .delete-goal-btn {
   width: 25px;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 /* Completed goal styling */
