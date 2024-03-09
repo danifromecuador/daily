@@ -22,7 +22,7 @@ export const DailyGoals = () => {
   }
 
   const handleStatusCheckBox = (i) => {
-    alert(i)
+    // alert(i)
     if (goals[i].status == 'pending') {
       goals[i].status = 'done'
       setGoals([...goals])
@@ -34,7 +34,11 @@ export const DailyGoals = () => {
   }
 
   const handleDeleteGoalBtn = (i) => {
-    alert(i)
+    // alert(i)
+    console.log(goals[i])
+    goals.splice(i, 1)
+    setGoals([...goals])
+    console.log(goals)
   }
 
   const manageDeleteAllGoalsBtn = () => setGoals([])
