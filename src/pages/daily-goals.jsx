@@ -65,7 +65,7 @@ export const DailyGoals = () => {
           <input 
           className="delete-goal-btn"
           type="button"
-           value="🞭"
+           value="X"
            onClick={()=> handleDeleteGoalBtn(i)}
            />
         </li>
