@@ -80,7 +80,12 @@ export const DailyGoals = () => {
                   autoFocus
                 />
               ) : (
-                <span onClick={() => handleEditGoal(i)}>{e.text}</span>
+                <span
+                  onClick={() => handleEditGoal(i)}
+                  className={"input-text" + " " + goals[i].status}
+                >
+                  {e.text}
+                </span>
               )}
               <input
                 className="delete-goal-btn"
