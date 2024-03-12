@@ -36,12 +36,20 @@ li {
 }
 
 /* Span inside list items styling */
-span {
-  /* margin-left: 10px; */
+span, 
+.input-text {
   padding: 0 10px;
   font-size: 0.9rem;
   width: 100%;
+  background-color: transparent;
+  color: white;
+  border: none;
 }
+
+.input-text:focus {
+  outline: none;
+}
+
 
 .delete-goal-btn {
   width: 25px;
