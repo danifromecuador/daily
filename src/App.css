@@ -46,6 +46,7 @@ span {
 .delete-goal-btn {
   width: 25px;
   cursor: pointer;
+  font-weight: bolder;
 }
 
 /* Completed goal styling */
